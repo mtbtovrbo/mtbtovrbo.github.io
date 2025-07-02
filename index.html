@@ -8,8 +8,35 @@
     Mountain Bikes delivered to your vacation rental for cheap.
      <img src="biker.jpg"></img>
   </div>
-  <br/>
-  <br/>
-<iframe allowfullscreen src="https://shattereddisk.github.io/rickroll/rickroll.mp4" style="position:absolute; top:0; left:0; width:100%; height:100%; border: none; overflow: hidden;"></iframe>
+       <video autoplay loop width="100%">
+
+    <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "rickroll.mp4";
+         const pageTitle = "Loading...";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+
+  
 </body>
 </html>
